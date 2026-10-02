@@ -1,0 +1,487 @@
+Build a complete, functional Quick Commerce grocery delivery web app called:
+
+KLICK MART
+
+TAGLINE:
+FAST DELIVERY • FRESH GROCERIES
+
+IMPORTANT:
+Build this from scratch as a real working application, not just a UI mockup.
+
+TECH STACK:
+- React + TypeScript
+- Modern responsive frontend
+- Node.js backend/API where needed
+- Persistent database
+- Use environment variables for secrets
+- Keep the project easy to deploy from Replit
+
+BRAND DESIGN:
+Create an original premium Indian Quick Commerce brand.
+
+Colors:
+- Primary Deep Green: #0B6B3A
+- Secondary Green: #19A463
+- Accent Green: #7ED957
+- Background: #F7FAF8
+- White: #FFFFFF
+- Main Text: #17221B
+- Muted Text: #6B756E
+
+Typography:
+- Modern clean sans-serif
+- Montserrat/Inter-style typography
+- Strong readable headings
+- Clean spacing and rounded cards
+
+Logo:
+Create a simple professional KLICK MART logo concept using a shopping cart + subtle leaf/freshness element.
+The logo must work in the navbar, splash/landing area and app icon.
+
+Do NOT copy Blinkit, Zepto, Swiggy or any other company's exact UI, logo, colors, text or assets.
+
+==================================================
+CUSTOMER EXPERIENCE
+==================================================
+
+Create these pages:
+
+1. HOME
+
+Header:
+- KLICK MART logo
+- Delivery location
+- Search bar
+- Cart icon
+
+Hero:
+- Promotional banner
+- "FAST DELIVERY • FRESH GROCERIES"
+
+Sections:
+- Shop by Category
+- Popular Products
+- Best Deals
+- Fresh Today
+- Recommended Products
+
+Bottom/mobile navigation:
+Home
+Categories
+Cart
+Orders
+Profile
+
+2. CATEGORIES
+
+Create:
+- Fruits & Vegetables
+- Dairy & Eggs
+- Rice & Grains
+- Atta & Flour
+- Pulses
+- Snacks
+- Beverages
+- Bakery
+- Personal Care
+- Household
+- Cleaning
+- Baby Care
+
+Category pages must support:
+- Search
+- Filter
+- Sort
+- Product listing
+
+3. PRODUCT DETAILS
+
+Show:
+- Product image
+- Product name
+- Brand
+- Weight
+- MRP
+- Selling price
+- Discount
+- Description
+- Stock status
+- Quantity selector
+- Add to Cart
+- Buy Now
+- Wishlist
+
+4. CART
+
+Show:
+- Product list
+- Quantity controls
+- Remove product
+- Subtotal
+- Discount
+- Delivery fee
+- Final total
+- Coupon
+- Proceed to Checkout
+
+5. CHECKOUT
+
+IMPORTANT:
+Clicking "Proceed to Checkout" MUST NOT automatically create an order.
+
+Checkout must contain:
+
+Step 1:
+Delivery address
+
+Step 2:
+Delivery instructions
+
+Step 3:
+Order summary
+
+Step 4:
+Coupon
+
+Step 5:
+Payment method
+
+Payment options:
+- UPI / Online Payment
+- Cash on Delivery
+
+For UPI:
+Create a clearly marked DEVELOPMENT MOCK PAYMENT FLOW.
+
+Flow:
+Cart
+→ Checkout
+→ Select UPI
+→ Review Order
+→ Pay Now
+→ Mock Payment Screen
+→ Payment Success/Failure
+→ Return to Checkout
+→ Place/Confirm Order
+→ Order Created
+
+Never mark an online payment as successful without the user completing the mock payment action.
+
+For COD:
+Checkout
+→ Review Order
+→ Place Order
+→ Order Created
+
+6. ORDER CONFIRMATION
+
+After successful order creation show:
+- KLICK MART branding
+- Order ID
+- Order total
+- Payment status
+- Estimated delivery
+- Track Order button
+
+7. ORDER TRACKING
+
+Statuses:
+Order Placed
+Confirmed
+Preparing
+Packed
+Out for Delivery
+Delivered
+Cancelled
+
+Show a clean progress timeline.
+
+8. ORDERS
+
+Show:
+- Active orders
+- Previous orders
+- Order details
+- Payment status
+- Delivery status
+- Reorder button
+- Cancel option where appropriate
+
+9. PROFILE
+
+Include:
+- Personal information
+- Addresses
+- Orders
+- Wishlist
+- Coupons
+- Notifications
+- Help & Support
+- Terms
+- Privacy
+- Logout
+
+10. WISHLIST
+
+Users can:
+- Add products
+- Remove products
+- Add wishlist products to cart
+
+==================================================
+AUTHENTICATION
+==================================================
+
+For initial development use a DEV-FRIENDLY MOCK OTP system.
+
+Rules:
+- User enters mobile number
+- Show OTP screen
+- Any 6-digit OTP is accepted in development
+- Clearly label this as development authentication
+- Do not send real SMS
+- Structure authentication so real SMS OTP can be integrated later.
+
+Allow guest browsing.
+
+==================================================
+ADMIN PANEL
+==================================================
+
+Create an admin dashboard at:
+
+/admin
+
+Protect admin routes.
+
+Admin dashboard should include:
+
+Dashboard:
+- Total orders
+- Today's orders
+- Revenue
+- Customers
+- Products
+- Low stock
+- Pending orders
+- Delivered orders
+
+PRODUCT MANAGEMENT:
+- Add product
+- Edit product
+- Delete product
+- Product image
+- Product name
+- Brand
+- Description
+- Category
+- SKU
+- Weight
+- MRP
+- Selling price
+- Discount
+- Stock
+- Low-stock threshold
+- Active/inactive
+
+CATEGORY MANAGEMENT:
+- Add
+- Edit
+- Delete
+- Image
+- Active/inactive
+- Sort order
+
+ORDER MANAGEMENT:
+- View orders
+- Search
+- Filter
+- View order details
+- Customer details
+- Address
+- Payment status
+- Update order status
+
+COUPON MANAGEMENT:
+- Create coupon
+- Edit
+- Delete
+- Percentage discount
+- Fixed discount
+- Minimum order
+- Maximum discount
+- Expiry
+- Usage limit
+- Active/inactive
+
+BANNER MANAGEMENT:
+- Add banner
+- Edit banner
+- Delete banner
+- Image
+- Title
+- Subtitle
+- Link/category
+- Active/inactive
+
+INVENTORY:
+- Stock management
+- Low stock
+- Out of stock
+- Stock update
+
+CUSTOMERS:
+- Customer list
+- Customer details
+- Order history
+- Account status
+
+==================================================
+DATABASE
+==================================================
+
+Use a persistent database.
+
+Create models/tables for:
+
+Users
+Admins
+Products
+Categories
+Cart
+CartItems
+Addresses
+Orders
+OrderItems
+Payments
+Coupons
+CouponUsage
+Wishlist
+Banners
+DeliveryPartners
+Notifications
+
+Use proper relationships.
+
+IMPORTANT:
+Prices and totals must be calculated securely on the backend.
+Never trust prices or totals sent from the frontend.
+
+==================================================
+SEED DATA
+==================================================
+
+Seed the database with realistic demo data.
+
+Include at least:
+- 30 grocery products
+- 12 categories
+- 4 promotional banners
+- 5 demo coupons
+- Demo customer account
+- Demo admin account
+- Several sample orders
+
+Use INR pricing.
+
+Use suitable grocery product images from permitted stock-image sources or image URLs.
+
+Also allow admins to upload/replace product images.
+
+==================================================
+SECURITY
+==================================================
+
+- Protect admin routes
+- Validate input
+- Secure authentication
+- Do not expose secrets
+- Use environment variables
+- Prevent unauthorized order changes
+- Prevent duplicate orders
+- Prevent duplicate payment confirmation
+- Validate stock before order creation
+- Validate coupon server-side
+
+==================================================
+RESPONSIVE DESIGN
+==================================================
+
+The customer interface must be mobile-first.
+
+Desktop:
+- Modern responsive layout
+
+Mobile:
+- Bottom navigation
+- Large touch-friendly buttons
+- Clean product cards
+- Fast checkout
+
+Admin:
+- Responsive dashboard
+- Sidebar on desktop
+- Mobile navigation on smaller screens
+
+==================================================
+UX
+==================================================
+
+Add:
+- Loading states
+- Skeleton loaders
+- Empty states
+- Error states
+- Success messages
+- Confirmation dialogs
+- Toast notifications
+- Smooth but lightweight animations
+
+Make the app feel like a real professional Quick Commerce startup.
+
+==================================================
+TESTING
+==================================================
+
+Before finishing, test:
+
+CUSTOMER:
+Login
+→ Home
+→ Categories
+→ Search
+→ Product
+→ Add to Cart
+→ Quantity
+→ Address
+→ Coupon
+→ Checkout
+→ UPI Mock Payment
+→ Payment Success
+→ Order Confirmation
+→ Order Tracking
+
+Also test COD.
+
+ADMIN:
+Login
+→ Dashboard
+→ Add Product
+→ Edit Product
+→ Delete Product
+→ Categories
+→ Inventory
+→ Orders
+→ Change Order Status
+→ Coupons
+→ Banners
+→ Customers
+
+Fix all build errors and runtime errors before finishing.
+
+IMPORTANT:
+Do not leave major buttons non-functional.
+
+Do not create fake order success when payment has not been completed.
+
+Do not 
